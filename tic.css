@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+  /* horizontal */ justify-content: center;  
+  /* vertical */  align-items: center;
+    background: whitesmoke;
+    font-family: Helvetica, sans-serif;
+}
+.container {
+    text-align: center;
+}
+h2 {
+    color: black;
+    font-weight: bolder;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+    gap: 20px;
+}
+.cell {
+    background: #e0e5ec;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: #a3b1c6;
+    transition: 0.2s;
+}
+.cell:active {
+    box-shadow: inset 5px 5px 10px lightgray,
+                inset -5px -5px 10px whitesmoke;
+}
+.X {
+    color: darkblue;  
+    font-weight: bold;
+}
+.O {
+    color: red;   
+    font-weight: bold;
+}
+button {
+    margin-top: 25px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #e0e5ec;
+box-shadow: 5px 5px 10px lightgrey,
+                -5px -5px 10px whitesmoke;    
+    cursor: pointer;
+}
